@@ -13,6 +13,8 @@ $(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+TARGET_BOARD_PLATFORM := msmnile
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
