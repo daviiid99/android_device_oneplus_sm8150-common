@@ -5,6 +5,7 @@
 #
 
 BUILD_BROKEN_DUP_RULES := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 BOARD_VENDOR := oneplus
 
