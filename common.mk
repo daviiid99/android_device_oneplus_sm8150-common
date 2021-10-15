@@ -447,6 +447,15 @@ PRODUCT_PACKAGES_DEBUG += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
+    
+# VNDK
+PRODUCT_PACKAGES += \
+    libdng_sdk.vendor_32 \
+    libstdc++.vendor_32 \
+    vndk-ext
+    
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/oneplus/guacamoleb/guacamoleb-vendor.mk)
 
 # Wifi
 PRODUCT_PACKAGES += \
